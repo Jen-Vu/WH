@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CitiesVC.swift
 //  WeatherHelper
 //
 //  Created by Vladyslav Zhulavskyi on 1/23/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CitiesVC: UIViewController {
+    //MARK: -Properties
+    var shared = CitiesController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        shared.getDataFromJSON()
     }
-
-
 }
 

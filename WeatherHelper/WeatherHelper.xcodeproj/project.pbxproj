@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FE10ED5821F8CF1200318267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5721F8CF1200318267 /* AppDelegate.swift */; };
-		FE10ED5A21F8CF1200318267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5921F8CF1200318267 /* ViewController.swift */; };
+		FE10ED5A21F8CF1200318267 /* CitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5921F8CF1200318267 /* CitiesVC.swift */; };
 		FE10ED5D21F8CF1200318267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED5B21F8CF1200318267 /* Main.storyboard */; };
 		FE10ED5F21F8CF1E00318267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED5E21F8CF1E00318267 /* Assets.xcassets */; };
 		FE10ED6221F8CF1E00318267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED6021F8CF1E00318267 /* LaunchScreen.storyboard */; };
+		FE297C3921F8DA1E00316A3F /* CitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE297C3821F8DA1E00316A3F /* CitiesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE10ED5421F8CF1200318267 /* WeatherHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE10ED5721F8CF1200318267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE10ED5921F8CF1200318267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE10ED5921F8CF1200318267 /* CitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesVC.swift; sourceTree = "<group>"; };
 		FE10ED5C21F8CF1200318267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE10ED5E21F8CF1E00318267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE10ED6121F8CF1E00318267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE10ED6321F8CF1E00318267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE297C3821F8DA1E00316A3F /* CitiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,9 @@
 		FE10ED5621F8CF1200318267 /* WeatherHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FE297C3621F8D99E00316A3F /* Model */,
 				FE10ED6B21F8D0F700318267 /* View */,
+				FE297C3721F8D9AB00316A3F /* Controller */,
 				FE10ED6A21F8D08900318267 /* SupportingFiles */,
 				FE10ED6921F8D03000318267 /* Resources */,
 			);
@@ -82,10 +86,25 @@
 		FE10ED6B21F8D0F700318267 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE10ED5921F8CF1200318267 /* ViewController.swift */,
+				FE10ED5921F8CF1200318267 /* CitiesVC.swift */,
 				FE10ED5B21F8CF1200318267 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FE297C3621F8D99E00316A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE297C3721F8D9AB00316A3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE297C3821F8DA1E00316A3F /* CitiesController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +178,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE10ED5A21F8CF1200318267 /* ViewController.swift in Sources */,
+				FE297C3921F8DA1E00316A3F /* CitiesController.swift in Sources */,
+				FE10ED5A21F8CF1200318267 /* CitiesVC.swift in Sources */,
 				FE10ED5821F8CF1200318267 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +327,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeatherHelper/Info.plist;
+				DEVELOPMENT_TEAM = 9GW49H8XYF;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +345,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeatherHelper/Info.plist;
+				DEVELOPMENT_TEAM = 9GW49H8XYF;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
