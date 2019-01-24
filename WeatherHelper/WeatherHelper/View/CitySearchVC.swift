@@ -1,5 +1,5 @@
 //
-//  CitiesVC.swift
+//  CitySearchVC.swift
 //  WeatherHelper
 //
 //  Created by Vladyslav Zhulavskyi on 1/23/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CitiesVC: UIViewController {
+class CitySearchVC: UIViewController {
     //MARK: -Properties
     var shared = CitiesController()
     
