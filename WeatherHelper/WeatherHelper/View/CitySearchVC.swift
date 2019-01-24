@@ -12,8 +12,8 @@ class CitySearchVC: UIViewController {
     //MARK: -Properties
     var ciryController = CitiesController()
     var recommendationController = RecommendationController()
-    
-    
+    var some: WeatherData?
+    var shared = CitiesController()
     //MARK: IBoutlets
     
     @IBOutlet weak var citiesTableView: UITableView!
@@ -25,10 +25,9 @@ class CitySearchVC: UIViewController {
         citiesTableView.dataSource = self
         
         citiesTableView.register(UINib(nibName: "CityTableViewCell", bundle: nil), forCellReuseIdentifier: "CityTableViewCell")
-        
+        shared.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/42.3601,-71.0589?exclude=daily&lang=uk")
     }
 }
-
 extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,7 +44,7 @@ extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
         let cell = citiesTableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as! CityTableViewCell
         
         cell.cityName.text = currentCity.cityName
-
+        
         return cell
     }
     

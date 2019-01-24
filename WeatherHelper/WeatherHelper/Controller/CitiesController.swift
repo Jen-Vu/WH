@@ -15,4 +15,18 @@ class CitiesController: NSObject {
                   City(cityName: "Odessa", lon: "-82.557617", lat: "28.183554"),
                   City(cityName: "Luzk", lon: "25.320078", lat: "50.745073"),
                   City(cityName: "Ternopil", lon: "25.591886", lat: "49.555772")]
+    func startJSON(string: String) {
+        DispatchQueue.global().async {
+            let sampleDataAddress = string
+            let url = URL(string: sampleDataAddress)
+            let jsonData = try! Data(contentsOf: url!)
+            do {
+                let decoder = JSONDecoder()
+                let user = try decoder.decode(WeatherData.self, from: jsonData)
+                print(user.hourly.summary)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
