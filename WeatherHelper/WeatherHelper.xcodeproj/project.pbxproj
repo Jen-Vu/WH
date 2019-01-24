@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C01C15C21F9ABB500DB40C3 /* Recomendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C01C15B21F9ABB500DB40C3 /* Recomendation.storyboard */; };
-		5C01C15E21F9AC6000DB40C3 /* CitySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C01C15D21F9AC6000DB40C3 /* CitySearch.storyboard */; };
-		5C01C16021F9AD0F00DB40C3 /* RecomendationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01C15F21F9AD0F00DB40C3 /* RecomendationVC.swift */; };
+		5C01C15E21F9AC6000DB40C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C01C15D21F9AC6000DB40C3 /* Main.storyboard */; };
 		5C01C16221F9AD3D00DB40C3 /* AfterLaunch_MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01C16121F9AD3D00DB40C3 /* AfterLaunch_MainVC.swift */; };
+		A15B081C21F9EE2B00D29F60 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B081A21F9EE2B00D29F60 /* CityTableViewCell.swift */; };
+		A15B081D21F9EE2B00D29F60 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15B081B21F9EE2B00D29F60 /* CityTableViewCell.xib */; };
+		A15B082121FA1CCC00D29F60 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B082021FA1CCC00D29F60 /* City.swift */; };
+		A15B082321FA2F2800D29F60 /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B082221FA2F2800D29F60 /* RecommendationViewController.swift */; };
+		A1D9A61B21FA337A00CD0A54 /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9A61A21FA337A00CD0A54 /* RecommendationController.swift */; };
+		A1D9A61D21FA33A400CD0A54 /* Recomendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9A61C21FA33A400CD0A54 /* Recomendation.swift */; };
+		A1F245CE21FA316E002F9402 /* RecomendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F245CC21FA316E002F9402 /* RecomendationTableViewCell.swift */; };
+		A1F245CF21FA316E002F9402 /* RecomendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F245CD21FA316E002F9402 /* RecomendationTableViewCell.xib */; };
 		FE10ED5821F8CF1200318267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5721F8CF1200318267 /* AppDelegate.swift */; };
 		FE10ED5A21F8CF1200318267 /* CitySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5921F8CF1200318267 /* CitySearchVC.swift */; };
-		FE10ED5D21F8CF1200318267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED5B21F8CF1200318267 /* Main.storyboard */; };
 		FE10ED5F21F8CF1E00318267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED5E21F8CF1E00318267 /* Assets.xcassets */; };
 		FE10ED6221F8CF1E00318267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED6021F8CF1E00318267 /* LaunchScreen.storyboard */; };
 		FE297C3921F8DA1E00316A3F /* CitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE297C3821F8DA1E00316A3F /* CitiesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C01C15B21F9ABB500DB40C3 /* Recomendation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recomendation.storyboard; sourceTree = "<group>"; };
-		5C01C15D21F9AC6000DB40C3 /* CitySearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CitySearch.storyboard; sourceTree = "<group>"; };
-		5C01C15F21F9AD0F00DB40C3 /* RecomendationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationVC.swift; sourceTree = "<group>"; };
+		5C01C15D21F9AC6000DB40C3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5C01C16121F9AD3D00DB40C3 /* AfterLaunch_MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLaunch_MainVC.swift; sourceTree = "<group>"; };
+		A15B081A21F9EE2B00D29F60 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		A15B081B21F9EE2B00D29F60 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		A15B082021FA1CCC00D29F60 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		A15B082221FA2F2800D29F60 /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
+		A1D9A61A21FA337A00CD0A54 /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
+		A1D9A61C21FA33A400CD0A54 /* Recomendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recomendation.swift; sourceTree = "<group>"; };
+		A1F245CC21FA316E002F9402 /* RecomendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationTableViewCell.swift; sourceTree = "<group>"; };
+		A1F245CD21FA316E002F9402 /* RecomendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecomendationTableViewCell.xib; sourceTree = "<group>"; };
 		FE10ED5421F8CF1200318267 /* WeatherHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE10ED5721F8CF1200318267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE10ED5921F8CF1200318267 /* CitySearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchVC.swift; sourceTree = "<group>"; };
-		FE10ED5C21F8CF1200318267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE10ED5E21F8CF1E00318267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE10ED6121F8CF1E00318267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE10ED6321F8CF1E00318267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +55,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15B081E21F9EE4100D29F60 /* CityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A15B081A21F9EE2B00D29F60 /* CityTableViewCell.swift */,
+				A15B081B21F9EE2B00D29F60 /* CityTableViewCell.xib */,
+			);
+			name = CityTableViewCell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A15B081F21FA1CB700D29F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A15B082021FA1CCC00D29F60 /* City.swift */,
+				A1D9A61C21FA33A400CD0A54 /* Recomendation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1F245D021FA3177002F9402 /* RecomendationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1F245CC21FA316E002F9402 /* RecomendationTableViewCell.swift */,
+				A1F245CD21FA316E002F9402 /* RecomendationTableViewCell.xib */,
+			);
+			path = RecomendationTableViewCell;
+			sourceTree = "<group>";
+		};
 		FE10ED4B21F8CF1100318267 = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +102,7 @@
 		FE10ED5621F8CF1200318267 /* WeatherHelper */ = {
 			isa = PBXGroup;
 			children = (
-				FE297C3621F8D99E00316A3F /* Model */,
+				A15B081F21FA1CB700D29F60 /* Model */,
 				FE10ED6B21F8D0F700318267 /* View */,
 				FE297C3721F8D9AB00316A3F /* Controller */,
 				FE10ED6A21F8D08900318267 /* SupportingFiles */,
@@ -95,26 +133,20 @@
 			isa = PBXGroup;
 			children = (
 				FE10ED5921F8CF1200318267 /* CitySearchVC.swift */,
-				FE10ED5B21F8CF1200318267 /* Main.storyboard */,
-				5C01C15B21F9ABB500DB40C3 /* Recomendation.storyboard */,
-				5C01C15D21F9AC6000DB40C3 /* CitySearch.storyboard */,
-				5C01C15F21F9AD0F00DB40C3 /* RecomendationVC.swift */,
+				5C01C15D21F9AC6000DB40C3 /* Main.storyboard */,
+				A15B082221FA2F2800D29F60 /* RecommendationViewController.swift */,
 				5C01C16121F9AD3D00DB40C3 /* AfterLaunch_MainVC.swift */,
+				A15B081E21F9EE4100D29F60 /* CityTableViewCell */,
+				A1F245D021FA3177002F9402 /* RecomendationTableViewCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FE297C3621F8D99E00316A3F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		FE297C3721F8D9AB00316A3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FE297C3821F8DA1E00316A3F /* CitiesController.swift */,
+				A1D9A61A21FA337A00CD0A54 /* RecommendationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,11 +209,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F245CF21FA316E002F9402 /* RecomendationTableViewCell.xib in Resources */,
 				FE10ED6221F8CF1E00318267 /* LaunchScreen.storyboard in Resources */,
-				5C01C15C21F9ABB500DB40C3 /* Recomendation.storyboard in Resources */,
 				FE10ED5F21F8CF1E00318267 /* Assets.xcassets in Resources */,
-				5C01C15E21F9AC6000DB40C3 /* CitySearch.storyboard in Resources */,
-				FE10ED5D21F8CF1200318267 /* Main.storyboard in Resources */,
+				5C01C15E21F9AC6000DB40C3 /* Main.storyboard in Resources */,
+				A15B081D21F9EE2B00D29F60 /* CityTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,25 +224,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15B081C21F9EE2B00D29F60 /* CityTableViewCell.swift in Sources */,
 				FE297C3921F8DA1E00316A3F /* CitiesController.swift in Sources */,
+				A1D9A61D21FA33A400CD0A54 /* Recomendation.swift in Sources */,
 				5C01C16221F9AD3D00DB40C3 /* AfterLaunch_MainVC.swift in Sources */,
-				5C01C16021F9AD0F00DB40C3 /* RecomendationVC.swift in Sources */,
 				FE10ED5A21F8CF1200318267 /* CitySearchVC.swift in Sources */,
+				A1F245CE21FA316E002F9402 /* RecomendationTableViewCell.swift in Sources */,
+				A15B082321FA2F2800D29F60 /* RecommendationViewController.swift in Sources */,
 				FE10ED5821F8CF1200318267 /* AppDelegate.swift in Sources */,
+				A15B082121FA1CCC00D29F60 /* City.swift in Sources */,
+				A1D9A61B21FA337A00CD0A54 /* RecommendationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE10ED5B21F8CF1200318267 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE10ED5C21F8CF1200318267 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE10ED6021F8CF1E00318267 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GW49H8XYF;
+				DEVELOPMENT_TEAM = Z634Z79A8M;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,7 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GW49H8XYF;
+				DEVELOPMENT_TEAM = Z634Z79A8M;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
