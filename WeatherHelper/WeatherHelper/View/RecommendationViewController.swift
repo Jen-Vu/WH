@@ -29,6 +29,11 @@ class RecommendationViewController: UIViewController {
         recomendationTableView.dataSource = self
 
         recomendationTableView.register(UINib(nibName: "RecomendationTableViewCell", bundle: nil), forCellReuseIdentifier: "RecomendationTableViewCell")
+        
+        
+        temperatureLabel.text = "\(City.shared.temperatureDouble[0])°C"
+        cityNameLabel.text = City.shared.nameString
+        descriptionLabel.text = City.shared.summaryString[0]
 
         // Do any additional setup after loading the view.
     }

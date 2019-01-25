@@ -25,7 +25,7 @@ class CitySearchVC: UIViewController {
         citiesTableView.dataSource = self
         
         citiesTableView.register(UINib(nibName: "CityTableViewCell", bundle: nil), forCellReuseIdentifier: "CityTableViewCell")
-        cityController.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/42.3601,-71.0589?exclude=daily&lang=uk")
+        
     }
 }
 extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
@@ -49,6 +49,11 @@ extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        City.shared.nameString = cityController.cities[indexPath.row]
         performSegue(withIdentifier: "nextView", sender: self)
+        
+        let lon = cityCoordinates[City.shared.nameString]![0]
+        let lat = cityCoordinates[City.shared.nameString]![1]
+        cityController.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/\(lon)),\(lat)?exclude=daily&lang=en")
     }
 }

@@ -62,15 +62,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8QI-z3-aAy">
-                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                                <rect key="frame" x="0.0" y="294" width="375" height="373"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSR-PB-fbS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-Ys-Fw4">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-Ys-Fw4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                         <color key="backgroundColor" red="0.51372549019607838" green="0.74901960784313726" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
@@ -79,11 +78,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="QWD-98-Hpk"/>
+                                    <constraint firstAttribute="height" constant="90" id="QWD-98-Hpk"/>
+                                    <constraint firstItem="I6e-Ys-Fw4" firstAttribute="leading" secondItem="QSR-PB-fbS" secondAttribute="leading" id="XeI-My-GoJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="I6e-Ys-Fw4" secondAttribute="bottom" id="cpG-zd-DHI"/>
+                                    <constraint firstItem="I6e-Ys-Fw4" firstAttribute="top" secondItem="QSR-PB-fbS" secondAttribute="top" id="daZ-2W-4AV"/>
+                                    <constraint firstAttribute="trailing" secondItem="I6e-Ys-Fw4" secondAttribute="trailing" id="qcX-h9-FaI"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysq-Tu-6hG">
-                                <rect key="frame" x="0.0" y="124" width="375" height="140"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz1-HU-9Eg">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="140"/>
@@ -130,10 +133,10 @@
                         <viewLayoutGuide key="safeArea" id="rZY-Ji-HVj"/>
                     </view>
                     <connections>
-                        <outlet property="cityNameLabel" destination="I6e-Ys-Fw4" id="2ex-ei-qxp"/>
-                        <outlet property="descriptionLabel" destination="m2x-12-dWw" id="F2U-lA-3k4"/>
+                        <outlet property="cityNameLabel" destination="I6e-Ys-Fw4" id="RYG-zW-v3G"/>
+                        <outlet property="descriptionLabel" destination="Yz1-HU-9Eg" id="SRP-ER-YaF"/>
                         <outlet property="recomendationTableView" destination="8QI-z3-aAy" id="3tI-G8-y8l"/>
-                        <outlet property="temperatureLabel" destination="m2x-12-dWw" id="6jY-jh-pm2"/>
+                        <outlet property="temperatureLabel" destination="m2x-12-dWw" id="oTm-C5-yZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXu-1Z-UXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
