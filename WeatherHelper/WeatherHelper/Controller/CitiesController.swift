@@ -13,7 +13,6 @@ class CitiesController: NSObject {
     var cities = Array(cityCoordinates.keys)
     
     func startJSON(string: String) {
-        DispatchQueue.global().async {
             let sampleDataAddress = string
             let url = URL(string: sampleDataAddress)
             let jsonData = try! Data(contentsOf: url!)
@@ -32,7 +31,6 @@ class CitiesController: NSObject {
             }
             print(City.shared.summaryString)
             print(City.shared.temperatureDouble)
-        }
     }
     
     func farenheitToCelcius(_ farenheit: Double) -> Double{

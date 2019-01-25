@@ -54,6 +54,6 @@ extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
         
         let lon = cityCoordinates[City.shared.nameString]![0]
         let lat = cityCoordinates[City.shared.nameString]![1]
-        cityController.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/\(lon)),\(lat)?exclude=daily&lang=en")
+        cityController.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/\(lon),\(lat)?exclude=daily&lang=en")
     }
 }
