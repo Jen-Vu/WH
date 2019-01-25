@@ -9,12 +9,8 @@
 import UIKit
 
 class CitiesController: NSObject {
-    var cities = [City(cityName: "Kiev", lon: "30.5238", lat: "50.45466"),
-                  City(cityName: "Lviv", lon: "-71.0589", lat: "42.3601"),
-                  City(cityName: "Kharkiv", lon: "36.232845", lat: "49.988358"),
-                  City(cityName: "Odessa", lon: "-82.557617", lat: "28.183554"),
-                  City(cityName: "Luzk", lon: "25.320078", lat: "50.745073"),
-                  City(cityName: "Ternopil", lon: "25.591886", lat: "49.555772")]
+    var shared = City()
+    var cities = ["Lviv", "Kyiv", "Kharkiv", "Odessa", "Lutsk", "Ternopil"]
     func startJSON(string: String) {
         DispatchQueue.global().async {
             let sampleDataAddress = string
@@ -23,10 +19,18 @@ class CitiesController: NSObject {
             do {
                 let decoder = JSONDecoder()
                 let user = try decoder.decode(WeatherData.self, from: jsonData)
-                print(user.hourly.summary)
+                for index in 0..<12 {
+                    self.shared.summaryString.append(user.hourly.data[index].summary)
+                }
+                for index in 0..<12 {
+                    self.shared.temperatureDouble.append(user.hourly.data[index].temperature)
+                }
+
             } catch {
                 print(error.localizedDescription)
             }
+            print(self.shared.summaryString)
+            print(self.shared.temperatureDouble)
         }
     }
 }

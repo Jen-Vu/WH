@@ -43,7 +43,7 @@ extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
         
         let cell = citiesTableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as! CityTableViewCell
         
-        cell.cityName.text = currentCity.cityName
+        cell.cityName.text = currentCity
         
         return cell
     }

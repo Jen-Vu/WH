@@ -23,8 +23,10 @@ final class Hourly {
     }
 }
 final class HourlyData {
+    var summary: String
     var temperature: Double
-    init(temperature: Double) {
+    init(summary: String, temperature: Double) {
+        self.summary = summary
         self.temperature = temperature
     }
 }
@@ -53,11 +55,13 @@ extension Hourly: Decodable {
 }
 extension HourlyData: Decodable {
     private enum Key: String, CodingKey {
+        case summary
         case temperature
     }
     convenience init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Key.self)
+        let summary = try container.decode(String.self, forKey: .summary)
         let temperature = try container.decode(Double.self, forKey: .temperature)
-        self.init(temperature: temperature)
+        self.init(summary: summary, temperature: temperature)
     }
 }

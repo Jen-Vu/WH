@@ -9,7 +9,6 @@
 import UIKit
 
 struct City {
-    var cityName: String
-    var lon: String
-    var lat: String
+    var summaryString = [String]()
+    var temperatureDouble = [Double]()
 }
