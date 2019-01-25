@@ -18,6 +18,8 @@ class CitySearchVC: UIViewController {
     
     @IBOutlet weak var citiesTableView: UITableView!
     
+    @IBOutlet weak var chooseCityLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

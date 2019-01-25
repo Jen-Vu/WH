@@ -19,24 +19,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-hV-3eI">
-                        <rect key="frame" x="24" y="11" width="272" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-Bg-SIX">
+                        <rect key="frame" x="30" y="11" width="201" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="PXq-hV-3eI" secondAttribute="bottom" id="I7L-c9-7eI"/>
-                    <constraint firstItem="PXq-hV-3eI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="aP2-2T-tof"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="PXq-hV-3eI" secondAttribute="trailing" constant="8" id="eJP-ds-2EY"/>
-                    <constraint firstItem="PXq-hV-3eI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="pfg-gg-RCB"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="recommendationCell" destination="PXq-hV-3eI" id="te7-0q-PHQ"/>
+                <outlet property="item" destination="o5d-Bg-SIX" id="nTm-Tp-rLN"/>
             </connections>
+            <point key="canvasLocation" x="60.799999999999997" y="138.53073463268368"/>
         </tableViewCell>
     </objects>
 </document>
