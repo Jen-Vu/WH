@@ -16,6 +16,8 @@
 		A1D9A61D21FA33A400CD0A54 /* Recomendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9A61C21FA33A400CD0A54 /* Recomendation.swift */; };
 		A1F245CE21FA316E002F9402 /* RecomendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F245CC21FA316E002F9402 /* RecomendationTableViewCell.swift */; };
 		A1F245CF21FA316E002F9402 /* RecomendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F245CD21FA316E002F9402 /* RecomendationTableViewCell.xib */; };
+		C37FBA6C21FB9134007BE9A6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C37FBA6A21FB9133007BE9A6 /* Montserrat-Regular.ttf */; };
+		C37FBA6D21FB9134007BE9A6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C37FBA6B21FB9134007BE9A6 /* Montserrat-Bold.ttf */; };
 		FE10ED5821F8CF1200318267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5721F8CF1200318267 /* AppDelegate.swift */; };
 		FE10ED5A21F8CF1200318267 /* CitySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10ED5921F8CF1200318267 /* CitySearchVC.swift */; };
 		FE10ED5F21F8CF1E00318267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE10ED5E21F8CF1E00318267 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		A1D9A61C21FA33A400CD0A54 /* Recomendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recomendation.swift; sourceTree = "<group>"; };
 		A1F245CC21FA316E002F9402 /* RecomendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationTableViewCell.swift; sourceTree = "<group>"; };
 		A1F245CD21FA316E002F9402 /* RecomendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecomendationTableViewCell.xib; sourceTree = "<group>"; };
+		C37FBA6A21FB9133007BE9A6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../../Downloads/montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		C37FBA6B21FB9134007BE9A6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../../Downloads/montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		FE10ED5421F8CF1200318267 /* WeatherHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE10ED5721F8CF1200318267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE10ED5921F8CF1200318267 /* CitySearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchVC.swift; sourceTree = "<group>"; };
@@ -84,6 +88,16 @@
 			path = RecomendationTableViewCell;
 			sourceTree = "<group>";
 		};
+		C37FBA6921FB90E4007BE9A6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C37FBA6B21FB9134007BE9A6 /* Montserrat-Bold.ttf */,
+				C37FBA6A21FB9133007BE9A6 /* Montserrat-Regular.ttf */,
+			);
+			name = fonts;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FE10ED4B21F8CF1100318267 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +129,7 @@
 		FE10ED6921F8D03000318267 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C37FBA6921FB90E4007BE9A6 /* fonts */,
 				FE10ED5E21F8CF1E00318267 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -209,11 +224,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37FBA6C21FB9134007BE9A6 /* Montserrat-Regular.ttf in Resources */,
 				A1F245CF21FA316E002F9402 /* RecomendationTableViewCell.xib in Resources */,
 				FE10ED6221F8CF1E00318267 /* LaunchScreen.storyboard in Resources */,
 				FE10ED5F21F8CF1E00318267 /* Assets.xcassets in Resources */,
 				5C01C15E21F9AC6000DB40C3 /* Main.storyboard in Resources */,
 				A15B081D21F9EE2B00D29F60 /* CityTableViewCell.xib in Resources */,
+				C37FBA6D21FB9134007BE9A6 /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z634Z79A8M;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z634Z79A8M;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherHelper/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
