@@ -36,6 +36,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="recommendationCell" destination="PXq-hV-3eI" id="te7-0q-PHQ"/>
+                <outlet property="recommendationLabel" destination="PXq-hV-3eI" id="RLC-y6-CfC"/>
             </connections>
         </tableViewCell>
     </objects>

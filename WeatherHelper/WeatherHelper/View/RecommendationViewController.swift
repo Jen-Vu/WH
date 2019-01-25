@@ -47,9 +47,9 @@ extension RecommendationViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let currentRecomendation = controller.recommnedations[indexPath.row]
         
-        let cell = recomendationTableView.dequeueReusableCell(withIdentifier: "RecomendationTableViewCell", for: indexPath) as! CityTableViewCell
+        let cell = recomendationTableView.dequeueReusableCell(withIdentifier: "RecomendationTableViewCell", for: indexPath) as! RecomendationTableViewCell
         
-        cell.cityName.text = currentRecomendation.recommendation
+        cell.recommendationLabel.text = currentRecomendation.recommendation
         
         return cell
     }
