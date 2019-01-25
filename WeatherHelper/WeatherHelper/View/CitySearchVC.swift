@@ -10,10 +10,8 @@ import UIKit
 
 class CitySearchVC: UIViewController {
     //MARK: -Properties
-    var ciryController = CitiesController()
+    var cityController = CitiesController()
     var recommendationController = RecommendationController()
-    var some: WeatherData?
-    var shared = CitiesController()
     //MARK: IBoutlets
     
     @IBOutlet weak var citiesTableView: UITableView!
@@ -27,7 +25,7 @@ class CitySearchVC: UIViewController {
         citiesTableView.dataSource = self
         
         citiesTableView.register(UINib(nibName: "CityTableViewCell", bundle: nil), forCellReuseIdentifier: "CityTableViewCell")
-        shared.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/42.3601,-71.0589?exclude=daily&lang=uk")
+        cityController.startJSON(string: "https://api.darksky.net/forecast/50ce78d1b344d3268b80456020b02d53/42.3601,-71.0589?exclude=daily&lang=uk")
     }
 }
 extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
@@ -37,20 +35,16 @@ extension CitySearchVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ciryController.cities.count
+        return cityController.cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let currentCity = ciryController.cities[indexPath.row]
+        let currentCity = cityController.cities[indexPath.row]
         
         let cell = citiesTableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as! CityTableViewCell
         
         cell.cityName.text = currentCity
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "nextView", sender: self)
     }
 }

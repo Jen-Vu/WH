@@ -9,10 +9,10 @@
 import UIKit
 
 class RecomendationTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var item: UILabel!
-    
+
 //    @IBOutlet weak var recommendationCell: UITableViewCell!
     
-    
+
 }
