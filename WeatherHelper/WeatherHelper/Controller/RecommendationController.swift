@@ -9,5 +9,27 @@
 import UIKit
 
 class RecommendationController: NSObject {
-    var recommnedations = [Recommendation(recommendation: "shorts")]
+    static var recommnedations = [Recommendation]()
+    
+    func getRecomendations() -> [Recommendation]{
+        return RecommendationController.recommnedations
+    }
+    
+    func updateRecomendation(){
+        switch City.shared.summaryString[0] {
+        case "Overcast", "Foggy", "Mostly Cloudy", "Partly Cloudy", "Clear":
+            City.shared.weatherIcon = UIImage(imageLiteralResourceName: "partly cloudy")
+            RecommendationController.recommnedations = [Recommendation(recommendation: "Jacket"), Recommendation(recommendation: "Shoes"), Recommendation(recommendation: "Hat")]
+        case "Snow", "Possible Light Snow":
+            City.shared.weatherIcon = UIImage(imageLiteralResourceName: "snow")
+            RecommendationController.recommnedations = [Recommendation(recommendation: "Coat"), Recommendation(recommendation: "Jumper"), Recommendation(recommendation: "Scarf"),
+                Recommendation(recommendation: "Gloves")]
+        default:
+            City.shared.weatherIcon = UIImage(imageLiteralResourceName: "thunder")
+            RecommendationController.recommnedations = [Recommendation(recommendation: "Coat"), Recommendation(recommendation: "Tie"), Recommendation(recommendation: "Socks"),
+                               Recommendation(recommendation: "Sweater")]
+        }
+        
+        
+    }
 }

@@ -23,5 +23,6 @@ struct City {
     static var shared = City()
     var nameString = ""
     var summaryString = [String]()
-    var temperatureDouble = [Double]()
+    var temperatureDouble = [Int]()
+    var weatherIcon = UIImage(imageLiteralResourceName: "rain")
 }

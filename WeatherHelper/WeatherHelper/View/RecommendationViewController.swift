@@ -17,11 +17,15 @@ class RecommendationViewController: UIViewController {
     @IBOutlet weak var cityNameLabel: UILabel!
 
     @IBOutlet weak var temperatureLabel: UILabel!
-
-    @IBOutlet weak var descriptionLabel: UILabel!
-
+    
+    @IBOutlet weak var summaryLbl: UILabel!
+    
+    @IBOutlet weak var weatherIcon: UIImageView!
+    
     @IBOutlet weak var recomendationTableView: UITableView!
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,9 +37,9 @@ class RecommendationViewController: UIViewController {
         
         temperatureLabel.text = "\(City.shared.temperatureDouble[0])°C"
         cityNameLabel.text = City.shared.nameString
-        descriptionLabel.text = City.shared.summaryString[0]
-
-        // Do any additional setup after loading the view.
+        summaryLbl.text = City.shared.summaryString[0]
+        weatherIcon.image = City.shared.weatherIcon
+        
     }
 }
 
@@ -46,11 +50,11 @@ extension RecommendationViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return controller.recommnedations.count
+        return controller.getRecomendations().count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let currentRecomendation = controller.recommnedations[indexPath.row]
+        let currentRecomendation = controller.getRecomendations()[indexPath.row]
 
         let cell = recomendationTableView.dequeueReusableCell(withIdentifier: "RecomendationTableViewCell", for: indexPath) as! RecomendationTableViewCell
 

@@ -29,11 +29,11 @@ class CitiesController: NSObject {
             } catch {
                 print(error.localizedDescription)
             }
-            print(City.shared.summaryString)
-            print(City.shared.temperatureDouble)
+//            print(City.shared.summaryString)
+//            print(City.shared.temperatureDouble)
     }
     
-    func farenheitToCelcius(_ farenheit: Double) -> Double{
-        return round((farenheit - 32)*5/9)
+    func farenheitToCelcius(_ farenheit: Double) -> Int{
+        return Int(round((farenheit - 32)*5/9))
     }
 }
