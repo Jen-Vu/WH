@@ -35,9 +35,9 @@ class RecommendationViewController: UIViewController {
         recomendationTableView.register(UINib(nibName: "RecomendationTableViewCell", bundle: nil), forCellReuseIdentifier: "RecomendationTableViewCell")
         
         
-        temperatureLabel.text = "\(City.shared.temperatureDouble[0])°C"
+        temperatureLabel.text = "\(City.shared.temperatureDouble.last!)°C"
         cityNameLabel.text = City.shared.nameString
-        summaryLbl.text = City.shared.summaryString[0]
+        summaryLbl.text = City.shared.summaryString.last!
         weatherIcon.image = City.shared.weatherIcon
         
     }

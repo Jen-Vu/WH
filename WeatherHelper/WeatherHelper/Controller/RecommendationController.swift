@@ -16,8 +16,11 @@ class RecommendationController: NSObject {
     }
     
     func updateRecomendation(){
-        switch City.shared.summaryString[0] {
-        case "Overcast", "Foggy", "Mostly Cloudy", "Partly Cloudy", "Clear":
+        switch City.shared.summaryString.last! {
+        case "Clear":
+            City.shared.weatherIcon = UIImage(imageLiteralResourceName: "clear-day")
+            RecommendationController.recommnedations = [Recommendation(recommendation: "Good mood")]
+        case "Overcast", "Foggy", "Mostly Cloudy", "Partly Cloudy" :
             City.shared.weatherIcon = UIImage(imageLiteralResourceName: "partly cloudy")
             RecommendationController.recommnedations = [Recommendation(recommendation: "Jacket"), Recommendation(recommendation: "Shoes"), Recommendation(recommendation: "Hat")]
         case "Snow", "Possible Light Snow":
